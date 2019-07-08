@@ -13,3 +13,7 @@
 ### Useful aliases
 
 ### Sources / Further reading
+
+(Atlassian's great git tutorials)[https://www.atlassian.com/git/tutorials]
+
+(This awesome git book)[https://git-scm.com/book/en/v2]
