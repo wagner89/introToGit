@@ -1,3 +1,3 @@
 export const MyEnum = {
-  key: value,
+  key: value2,
 };
