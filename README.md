@@ -10,6 +10,7 @@
 
 - repository
 - init
+- working tree
 - clean / dirty
 - staging area / index / cache
 - branch / master
@@ -25,12 +26,19 @@
 ### Short command overview
 
 git init
+
 git clone
+
 git log
+
 git status
+
 git checkout branch_name
+
 git branch
+
 git branch -D
+
 git checkout -b branch_name
 
 
