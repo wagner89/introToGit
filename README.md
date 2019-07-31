@@ -51,7 +51,7 @@ git checkout -b branch_name
 
 ### Conflict resolution
 
-- theirs / ours
+- theirs / ours [Check this out](https://nitaym.github.io/ourstheirs/)
 
 ### Tips & tricks / best practices
 
