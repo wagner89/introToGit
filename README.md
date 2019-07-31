@@ -115,7 +115,10 @@ git checkout -b branch_name
 
 5. git merge-base branch -> finds the commit that will serve as the last common ancestor
 
-6. Interesting stuff
+6. git pull vs git fetch
+    - pull = fetch + merge
+
+7. Interesting stuff
     - gitk for browsing
     - git bisect for finding issues (git besect start / git bisect good/bad/skip / git bisect reset)
 
