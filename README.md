@@ -66,21 +66,23 @@ git checkout -b branch_name
 
 [Atlassian's great git tutorials](https://www.atlassian.com/git/tutorials)
 
+[This awesome git book](https://git-scm.com/book/en/v2)
 
-###Let’s GIT v2
 
-1. What is REBASE vs MERGE
+## Let’s GIT v2
+
+1. #### What is REBASE vs MERGE
     - non-destructive vs destructive
-    - noisy vs invisible
+    - noisy vs invisible (fast-forward)
     - git pull - -rebase
 
-2. The three trees
+2. #### The three trees
     - the working directory
     - the staging index
     - commit history
     - (Stash)
 
-4. Git reset vs git checkout vs git revert
+4. #### Git reset vs git checkout vs git revert
     - reset 
         - Commit level
             - soft -> only the history (HEAD)
@@ -96,18 +98,24 @@ git checkout -b branch_name
     - revert
         - forward moving, safe, only commit level -> single no-loss undo, safe for public branches
 
-3. Referencing stuff
+3. #### Referencing stuff
     - git reflog - 30 day GC for dangling commits
     - git rev-parse [branch | tag | etc ]
-4. git rebase —onto and —i 	
-    - 
-5. 
+    - git gc (packed-refs, dangling commits die)
+ 
+4. #### git rebase —onto and —i 	
+    - git rebase --onto new_base_branch old_base_branch branch_being_moved
+    - git rebase -i HEAD~3
+        - p, pick = use commit
+        - r, reword = use commit, but edit the commit message
+        - e, edit = use commit, but stop for amending
+        - s, squash = use commit, but meld into previous commit
+        - f, fixup = like "squash", but discard this commit's log message
+        - x, exec = run command (the rest of the line) using shell 
 
-1. git merge-base branch -> finds the commit that will serve as the last common ancestor
+5. git merge-base branch -> finds the commit that will serve as the last common ancestor
 
-9. Interesting stuff
+6. Interesting stuff
     - gitk for browsing
     - git bisect for finding issues (git besect start / git bisect good/bad/skip / git bisect reset)
 
-
-[This awesome git book](https://git-scm.com/book/en/v2)
